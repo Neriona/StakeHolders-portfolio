@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stakeholders — Cybersecurity Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanlines" aria-hidden="true"></div>
+  <!-- GRID BG -->
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">[</span>STAKE<span class="logo-accent">HOLDERS</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon" id="toggleIcon">☀</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#team" class="mob-link">Team</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="matrixCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="blink-dot"></span>
+        SYSTEM ONLINE · SECURITY CLEARANCE ACTIVE
+      </div>
+      <h1 class="hero-title">
+        <span class="line1">STAKE</span>
+        <span class="line2">HOLDERS</span>
+      </h1>
+      <p class="hero-sub">
+        Cybersecurity engineers, ML architects & cloud defenders.<br/>
+        We don't just build systems — we <em>fortify</em> them.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#team" class="btn-ghost">Meet the Team</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Engineers</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Domains</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="wave-sep wave-1">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,45 C300,90 600,0 900,55 C1100,90 1300,20 1440,45 L1440,90 L0,90 Z" class="wave-path-fill"/>
+    </svg>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <div class="section-label">// WHO WE ARE</div>
+          <h2 class="section-title">Security-first.<br/><em>Always.</em></h2>
+          <p>Stakeholders is a student cybersecurity & engineering team operating at the intersection of classical and quantum threat landscapes, machine learning, and cloud infrastructure.</p>
+          <p>We design, break, and rebuild systems — with a focus on real-world defensive architectures and cutting-edge cryptographic research.</p>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-title">team.sh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+            <div class="t-line t-out">stakeholders_team</div>
+            <div class="t-line"><span class="t-prompt">$</span> cat mission.txt</div>
+            <div class="t-line t-out">Defending systems from classical</div>
+            <div class="t-line t-out">and quantum threats since 2023.</div>
+            <div class="t-line"><span class="t-prompt">$</span> ls ./expertise</div>
+            <div class="t-line t-out"><span class="t-pink">crypto/</span>  <span class="t-pink">ml/</span>  <span class="t-pink">cloud/</span>  <span class="t-pink">devops/</span></div>
+            <div class="t-line"><span class="t-prompt">$</span> <span class="cursor-blink">_</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="wave-sep wave-2">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C400,80 800,5 1200,60 C1320,80 1400,45 1440,35 L1440,90 L0,90 Z" class="wave-path-fill2"/>
+    </svg>
+  </div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-pad skills-bg">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">// CAPABILITIES</div>
+        <h2 class="section-title">Our tech arsenal</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🔐</span>
+            <span class="skill-name">Post-Quantum Crypto</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="90"></div></div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🤖</span>
+            <span class="skill-name">Machine Learning</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">☁️</span>
+            <span class="skill-name">Cloud / AWS / LocalStack</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div>
+          <div class="skill-pct">88%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🛡️</span>
+            <span class="skill-name">Threat Detection</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="92"></div></div>
+          <div class="skill-pct">92%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-name">DevOps & Microservices</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="80"></div></div>
+          <div class="skill-pct">80%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">📊</span>
+            <span class="skill-name">ML Model Deployment</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="83"></div></div>
+          <div class="skill-pct">83%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-name">Neural Networks</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="87"></div></div>
+          <div class="skill-pct">87%</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">📱</span>
+            <span class="skill-name">App Development</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-w="78"></div></div>
+          <div class="skill-pct">78%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="wave-sep wave-3">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,55 C200,10 500,80 800,30 C1050,0 1300,70 1440,45 L1440,90 L0,90 Z" class="wave-path-fill"/>
+    </svg>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">// OPERATIONS LOG</div>
+        <h2 class="section-title">Projects we've<br/><em>deployed</em></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="proj-card reveal" data-index="01">
+          <div class="proj-num">01</div>
+          <div class="proj-category">Cryptography · Quantum</div>
+          <h3 class="proj-title">Réseaux Neuronaux pour l'Optimisation SIDH & SIKE</h3>
+          <p class="proj-desc">Application of neural networks to optimize post-quantum cryptographic schemes SIDH and SIKE — exploring hybrid classical-quantum attack detection at protocol level.</p>
+          <div class="proj-tags">
+            <span class="ptag">Post-Quantum</span>
+            <span class="ptag">Neural Networks</span>
+            <span class="ptag">SIDH/SIKE</span>
+            <span class="ptag">Python</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-index="02">
+          <div class="proj-num">02</div>
+          <div class="proj-category">Security · Threat Detection</div>
+          <h3 class="proj-title">Détection d'Attaque Hybride Classique et Quantique</h3>
+          <p class="proj-desc">Hybrid intrusion detection system that identifies both classical and quantum attack vectors simultaneously — using ML classifiers trained on adversarial datasets.</p>
+          <div class="proj-tags">
+            <span class="ptag">IDS</span>
+            <span class="ptag">ML</span>
+            <span class="ptag">Quantum Threats</span>
+            <span class="ptag">TensorFlow</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-index="03">
+          <div class="proj-num">03</div>
+          <div class="proj-category">Cloud · Encryption</div>
+          <h3 class="proj-title">LocalStack — Chiffrement des Données S3 & Simulation Panne VM Cloud</h3>
+          <p class="proj-desc">End-to-end encryption pipeline for S3 buckets using LocalStack. Includes VM failure simulation scenarios for cloud resilience testing without live infrastructure costs.</p>
+          <div class="proj-tags">
+            <span class="ptag">LocalStack</span>
+            <span class="ptag">AWS S3</span>
+            <span class="ptag">Encryption</span>
+            <span class="ptag">Cloud Resilience</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-index="04">
+          <div class="proj-num">04</div>
+          <div class="proj-category">App Dev · Sustainability</div>
+          <h3 class="proj-title">Application Campus Éco/Responsable</h3>
+          <p class="proj-desc">Full-stack mobile/web application promoting eco-responsible campus behaviors — carbon tracking, green challenges, and sustainability reporting dashboard for students.</p>
+          <div class="proj-tags">
+            <span class="ptag">Mobile</span>
+            <span class="ptag">React</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">Eco-Tech</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-index="05">
+          <div class="proj-num">05</div>
+          <div class="proj-category">DevOps · Security · AI</div>
+          <h3 class="proj-title">Système de Gestion des Incidents — Architecture Microservices</h3>
+          <p class="proj-desc">AI-driven incident management platform built on a microservices architecture with full DevOps pipeline — CI/CD, containerization, service mesh, and security hardening.</p>
+          <div class="proj-tags">
+            <span class="ptag">Microservices</span>
+            <span class="ptag">Docker</span>
+            <span class="ptag">Kubernetes</span>
+            <span class="ptag">AI</span>
+            <span class="ptag">DevSecOps</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-index="06">
+          <div class="proj-num">06</div>
+          <div class="proj-category">ML · Production</div>
+          <h3 class="proj-title">Déploiement de Modèles ML — Transformation Pipeline</h3>
+          <p class="proj-desc">End-to-end ML deployment transformation framework — from raw model training to production-grade inference APIs with monitoring, versioning, and automated retraining pipelines.</p>
+          <div class="proj-tags">
+            <span class="ptag">MLOps</span>
+            <span class="ptag">FastAPI</span>
+            <span class="ptag">Docker</span>
+            <span class="ptag">Model Serving</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-status online"><span></span>Completed</div>
+            <a href="#" class="proj-link">OPEN ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="wave-sep wave-4">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,35 C350,80 700,10 1050,60 C1200,80 1350,30 1440,50 L1440,90 L0,90 Z" class="wave-path-fill2"/>
+    </svg>
+  </div>
+
+  <!-- TEAM -->
+  <section id="team" class="section-pad team-bg">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">// PERSONNEL</div>
+        <h2 class="section-title">The operatives</h2>
+      </div>
+      <div class="team-grid">
+
+        <div class="member-card reveal">
+          <div class="member-glitch-wrap">
+            <div class="member-avatar" data-initials="RL">
+              <img src="rayhana.jpeg" alt="Rayhana Laznasni" class="avatar-photo" />
+            </div>
+            <div class="member-ring"></div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Rayhana Laznasni</h3>
+            <div class="member-role">Cybersecurity Engineer · ML Researcher</div>
+            <p class="member-bio">Specializes in post-quantum cryptography and neural network optimization for cryptographic protocols. Passionate about defending systems at the algorithmic level.</p>
+            <div class="member-skills">
+              <span class="mtag">SIDH/SIKE</span>
+              <span class="mtag">Python</span>
+              <span class="mtag">TensorFlow</span>
+              <span class="mtag">Quantum Crypto</span>
+            </div>
+            <div class="member-links">
+              <a href="#" class="mlink">GitHub</a>
+              <a href="#" class="mlink">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card reveal">
+          <div class="member-glitch-wrap">
+            <div class="member-avatar" data-initials="FH">
+              <img src="fatima.png" alt="Fatima Halloul" class="avatar-photo" />
+            </div>
+            <div class="member-ring"></div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Fatima Halloul</h3>
+            <div class="member-role">Cloud Architect · DevSecOps Engineer</div>
+            <p class="member-bio">Expert in cloud infrastructure security, microservices architecture, and MLOps pipelines. Bridges the gap between development velocity and production-grade security.</p>
+            <div class="member-skills">
+              <span class="mtag">LocalStack</span>
+              <span class="mtag">Kubernetes</span>
+              <span class="mtag">DevOps</span>
+              <span class="mtag">MLOps</span>
+            </div>
+            <div class="member-links">
+              <a href="#" class="mlink">GitHub</a>
+              <a href="#" class="mlink">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="wave-sep wave-5">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,60 C250,10 600,80 950,25 C1150,0 1350,60 1440,40 L1440,90 L0,90 Z" class="wave-path-fill"/>
+    </svg>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <div class="section-label">// ESTABLISH CONTACT</div>
+          <h2 class="section-title">Ready to<br/><em>connect?</em></h2>
+          <p>We're open to research collaborations, internships, and challenging projects in cybersecurity, cloud, and ML. Send a signal.</p>
+          <div class="contact-info">
+            <div class="cinfo-row">
+              <span class="cinfo-icon">✉</span>
+              <a href="/cdn-cgi/l/email-protection#e390978288868b8c8f87869190a39786828ecd878695"><span class="__cf_email__" data-cfemail="bccfc8ddd7d9d4d3d0d8d9cecffcc8d9ddd192d8d9ca">[email&#160;protected]</span></a>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-icon">📍</span>
+              <span>Morocco</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <div class="cf-field">
+              <label>NAME</label>
+              <input type="text" placeholder="Your name" />
+            </div>
+            <div class="cf-field">
+              <label>EMAIL</label>
+              <input type="email" placeholder="your@email.com" />
+            </div>
+            <div class="cf-field">
+              <label>MESSAGE</label>
+              <textarea placeholder="Describe your project or inquiry..." rows="4"></textarea>
+            </div>
+            <button class="btn-primary full-width" id="sendBtn">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wave-sep wave-footer">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C400,60 800,0 1200,40 C1320,55 1400,25 1440,30 L1440,60 L0,60 Z" class="wave-footer-fill"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>STAKE<span class="logo-accent">HOLDERS</span><span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-copy">© 2025 Stakeholders Team · Rayhana Laznasni & Fatima Halloul</p>
+      <p c
